@@ -1,6 +1,3 @@
-
-
-
 var app = angular.module('myapp', []);
 app.controller('mainController', function ($scope, $http) {
     
@@ -16,5 +13,3 @@ app.controller('mainController', function ($scope, $http) {
         };
         
 });
-
-
