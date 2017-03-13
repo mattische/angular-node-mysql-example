@@ -43,13 +43,9 @@ app.get("/employees", function(req, res){
 
 });
 
-
 app.get("/", function(req, res){
             res.sendFile("employees.html", { root : __dirname});
 });
-
-
-
 
 app.post("/updateEmployee", function(request, response) {
     console.log("/updateEmployee");
