@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>my title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <script src="https://opensource.keycdn.com/angularjs/1.6.2/angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        gud vad fint
+        <div ng-app="myapp" ng-controller="mainController">
+            <div ng-repeat="e in employees">
+                    <ul>
+                        <li>
+                            <form ng-submit="postItems(this)" >
+                                <input type="hidden" ng-model="e.employeeNumber" />     
+                                <input type="text" ng-model="e.firstName" />
+                                <input type="text" ng-model="e.lastName" />
+                                <button type="submit">Submit</button>
+                            </form>
+                        
+                        
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </body>
+</html>
