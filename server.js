@@ -22,7 +22,6 @@ Database;
                             ENGINE=InnoDB DEFAULT CHARSET=latin1';
 *********************************************************************/
 
-
 var con = mysql.createConnection({
     host: "<HOST-IP>",
     user: "<USER>",
@@ -32,8 +31,6 @@ var con = mysql.createConnection({
 
 app.use(express.static(__dirname + '/'));
 app.use(bodyparser.json());
-//app.use(bodyparser.json({ type: 'application/vnd.api+json' }));
-
 
 app.get("/employees", function(req, res){
     console.log("ok......");
